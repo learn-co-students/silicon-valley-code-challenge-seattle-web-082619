@@ -18,10 +18,10 @@ class FundingRound
 
     private 
 
-    def investment_error # not actually returning error message, but it is removing negative investments from @@all
+    def investment_error
         if self.investment < 0 
             @@all.pop 
-            return "Invalid investment, you may only invest a positive value."
+            puts "Invalid investment, you may only invest a positive value."
         end
     end
 

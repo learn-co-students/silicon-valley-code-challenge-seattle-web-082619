@@ -29,7 +29,7 @@ class VentureCapitalist
         self.funding_rounds.collect { |i| i.startup }.uniq
     end
 
-    def biggest_investment # what is a better way to do this?
+    def biggest_investment
         big = 0
         round = nil
         self.funding_rounds.each do |i| 
